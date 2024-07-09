@@ -171,9 +171,7 @@ function clearTimerCreateNew() {
   function setTimer() {
     // LOG OUT AFTER 10 MINUTES
     logOffTimeout = setTimeout(() => {
-      setActiveStatesToFalse(accounts);
-      DOM_containerApp.style.opacity = '0';
-      DOM_labelWelcome.textContent = `Log in to get started`;
+      logout();
     }, 1000 * 60 * 10);
   
     // DISPLAY
@@ -232,6 +230,8 @@ function login() {
     // show UI
     DOM_containerApp.style.opacity = '1';
     DOM_labelWelcome.textContent = `${welcomeMessage}, ${objBeingAcessed.owner.split(' ')[0]}!`;
+    // workaround for the login page scroll problem
+    // whenever the user logs off, these declarations below are cancelled and the page automatically scrolls up
     document.body.style.height = "unset";
     document.body.style.minHeight = "100svh";
     document.body.style.overflow = "unset";
@@ -244,6 +244,15 @@ function login() {
     displayMovements();
     displaySummaryBalance();
   }
+}
+
+// LOG OUT
+function logout() {
+  setActiveStatesToFalse(accounts);
+  DOM_containerApp.style.opacity = '0';
+  DOM_labelWelcome.textContent = `Log in to get started`;
+  window.scrollTo(0, 0);
+  document.body.style = '';
 }
 
 // MOVEMENTS
@@ -363,10 +372,7 @@ function close() {
     accounts.splice(accounts.findIndex((obj) => obj.username === activeObj.username), 1);
 
     // back to log in page
-    DOM_containerApp.style.opacity = '0';
-    DOM_labelWelcome.textContent = `Log in to get started`;
-    window.scrollTo(0,0);
-    document.body.style = "";
+    logout();
   }
 }
 
