@@ -365,6 +365,7 @@ function close() {
     // back to log in page
     DOM_containerApp.style.opacity = '0';
     DOM_labelWelcome.textContent = `Log in to get started`;
+    window.scrollTo(0,0);
     document.body.style = "";
   }
 }
