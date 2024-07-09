@@ -6,6 +6,7 @@ This is a project from the Jonas Schmedtmann's JS course, "Working with Arrays" 
 
 ## Table of contents
 - [Overview](#overview)
+    - [Credentials](#credentials)
     - [Screenshots](#screenshots)
         - [Desktop](#desktop)
         - [Tablet](#tablet)
@@ -17,7 +18,16 @@ This is a project from the Jonas Schmedtmann's JS course, "Working with Arrays" 
 
 My version fixes some bugs that I've noticed on Jonas' implementation, modifies some of the page's behavior in a way that makes more sense to me and features a couple of new things. I'll go into more detail in the next paragraphs.
 
-It has only 4 accounts: (js, 1111), (jd, 2222), (stw, 3333) and (ss, 4444). You can log in and play around with the operations! All the modifications are gone when the page is reloaded, though.
+### Credentials
+
+You can log in as one of the fictional users and play around with the operations! All the modifications are gone when the page is reloaded, though.
+
+| User | Username | PIN | Locale | Currency |
+| :----: | :--------: | :---: | :------: | :--------: |
+| Jonas Schmedtmann | js | 1111 | pt-PT | EUR |
+| Jessica Davis | jd | 2222 | en-US | USD |
+| Stewart Thomas Williams | stw | 3333 | en-GB | GBP |
+| Sarah Smith | ss | 4444 | pt-BR | BRL |
 
 ### Screenshots
 
