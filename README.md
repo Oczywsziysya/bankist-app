@@ -29,7 +29,7 @@ It has only 4 accounts: (js, 1111), (jd, 2222), (stw, 3333) and (ss, 4444). You 
 <div align="center"><img src="./screenshots/screenshot-app-tablet.png" width="420" /></div>
 
 #### Mobile
-<div align="center"><img src="./screenshots/screenshot-login-mobile.png" width="420" /></div>
+<div align="center"><img src="./screenshots/screenshot-login-mobile.png" width="320" /></div>
 <div align="center"><img src="./screenshots/screenshot-app-mobile.png" width="320" /></div>
 
 ## My experience
@@ -42,7 +42,7 @@ As a beginner in web-development and programming in general, this is the most ex
 - Working with the Date API and nicely formatting dates according to the user's locale with the Intl internationalization API.
 - Formatting numbers and currencies according to the user's locale with the Intl internationalization API.
 - The main 3 ways of using dynamic variable names:
-    - Using the eval() function (not recommended).
+    - Using the `eval()` function (not recommended).
     - Declaring the variables that'll be accessed dynamically as var variables, and then accessing them through the Global Object with template literals.
     - Wrapping the needed variables (they can be let/const ones) in an object and using template literals to access them (most recommended way).
 - Using global state variables to control the application's behavior.
@@ -57,7 +57,7 @@ As a beginner in web-development and programming in general, this is the most ex
 - In the DEMO version, if a transfer or loan is made while the movements are sorted in ascending order, then it goes back to the default chronological order. My implementation keeps the sorting mode until the user relogs or presses the sorting button again.
 - My idle timer works a little bit differently. Whenever a user tries to do any kind of action (be it successful or unsuccessful), the timer is reset. Jonas' timer, on the other hand, is reset only when the user successfully transfers money or requests a loan.
 - My currency balance date is updated every time the UI changes. Jonas' currency balance date does not change after the user has logged in, even when the UI is updated.
-- I implemented a very rudimentary, but functional currency conversion between accounts, all thanks to dynamic variable names. It converts between USD (\$), GBP (£), EUR (€) and BRL (R\$). On Jonas' version, even though the currency formatting is different for each account (since it's formatted according to the user's locale), the values are the same. For instance, if Jessica (US) transfers 1000 USD to Sarah (BR), Sarah will receive a deposit of 1000 BRL, which is incorrect. My currency conversion rates are hard-coded, though, so this is a point of improvement for the future.
+- I implemented a very rudimentary, but functional currency conversion between accounts, all thanks to dynamic variable names. It converts between USD (<span>$</span>), GBP (£), EUR (€) and BRL (R<span>$</span>). On Jonas' version, even though the currency formatting is different for each account (since it's formatted according to the user's locale), the values are the same. For instance, if Jessica (US) transfers 1000 USD to Sarah (BR), Sarah will receive a deposit of 1000 BRL, which is incorrect. My currency conversion rates are hard-coded, though, so this is a point of improvement for the future.
 - As mentioned before, I made it responsive accross all screensizes from 1440px to 320px. It could be better, of course, but it works quite well and is much better than having a broken page.
 
 
