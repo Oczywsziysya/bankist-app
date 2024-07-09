@@ -13,6 +13,7 @@ This is a project from the Jonas Schmedtmann's JS course, "Working with Arrays" 
         - [Mobile](#mobile)
 - [My experience](#my-experience)
     - [My corrections, modifications and improvements](#my-corrections-modifications-and-improvements)
+- [Pending features](#pending-features)
 
 ## Overview
 
@@ -70,5 +71,12 @@ As a beginner in web-development and programming in general, this is the most ex
 - I implemented a very rudimentary, but functional currency conversion between accounts, all thanks to dynamic variable names. It converts between USD (<span>$</span>), GBP (£), EUR (€) and BRL (R<span>$</span>). On Jonas' version, even though the currency formatting is different for each account (since it's formatted according to the user's locale), the values are the same. For instance, if Jessica (US) transfers 1000 USD to Sarah (BR), Sarah will receive a deposit of 1000 BRL, which is incorrect. My currency conversion rates are hard-coded, though, so this is a point of improvement for the future.
 - As mentioned before, I made it responsive accross all screensizes from 1440px to 320px. It could be better, of course, but it works quite well and is much better than having a broken page.
 
+## Pending features
+
+- [ ] Redesign the log in page and the in-app navigation component.
+- [ ] Add Dark Mode support.
+- [ ] Instead of hard-coding currency exchange rates, get the live rates from a reliable exchange rates API.
+- [ ] Seamlessly merge the Bankist App with the Bankist Marketing Page (coming soon).
+- [ ] Implement a simple sign-up feature (no back-end involved for now).
 
 
